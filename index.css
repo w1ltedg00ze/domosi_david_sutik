@@ -17,13 +17,14 @@ body{
     min-width: 100vw;
     padding-inline: 32px;
     padding-block: 64px;
+    
 
 }
 
 main{
     max-width: 90vw;
     min-height: calc(100vh - 128px);
-    align-content: center;
+    
     background-color: white;
     border-radius: 12px;
     border: 3px solid black ;
@@ -40,6 +41,10 @@ main{
     font-size: 20px;
     padding: 0.5rem;
     border-radius: 12px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    
 
 }
 
@@ -48,9 +53,13 @@ main{
     font-weight: 400;
 }
 
-.header h2{
+.article h2{
     font-size: 56px;
     font-weight: 400;
+}
+
+b{
+    color: #8d5b1a;
 }
 
 .section p{
@@ -64,12 +73,57 @@ article{
     max-width: 1080px;
     margin: auto;
     display: grid;
-
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: auto;
+    grid-area: auto;
 }
 
-article img{
-    width: 100%;
+.article img{
+    width: 550px;
     height: 550px;
     object-fit: cover;
 }
 
+aside{
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 12px;
+}
+
+th{
+    text-align: center;
+    font-style: normal;
+}
+
+tr:nth-child(odd){
+    background-color: #8d5b1a;
+    color: #feda70;
+}
+tr:nth-child(even){
+    background-color: #feda70;
+}
+
+footer{
+    display: block;
+    background-color: #8d5b1a;
+    border: 1px solid black;
+    border-radius: 12px;
+    max-width: 1080px;
+    padding: 12px;
+    text-align: center;
+}
