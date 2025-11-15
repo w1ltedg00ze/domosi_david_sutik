@@ -126,4 +126,6 @@ footer{
     max-width: 1080px;
     padding: 12px;
     text-align: center;
+    margin: auto;
+    width: 100%;
 }
